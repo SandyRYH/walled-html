@@ -270,29 +270,30 @@
 // console.log(validate(""));      // Output: 0 (String kosong)
 // console.log(validate("abc123")); // Output: -1 (Mengandung angka)
 
-let fruit = [
-    "apel",
-    "Jeruk",
-    "Anggur"
-];
+// let fruit = [
+//     "apel",
+//     "Jeruk",
+//     "Anggur"
+// ];
 
-for (let i = 0; i < fruit.length; i++) {
-    console.log(`Nama buah: ${fruit[i]}`);
-    console.log(`Jumlah huruf: ${fruit[i].length}`);
-}
+// for (let i = 0; i < fruit.length; i++) {
+//     console.log(`Nama buah: ${fruit[i]}`);
+//     console.log(`Jumlah huruf: ${fruit[i].length}`);
+// }
 
-let fruits = [
-    [
-        "apel",
-        "Jeruk",
-        "Anggur"
-    ]
-];
+// let fruits = [
+//     [
+//         "apel",
+//         "Jeruk",
+//         "Anggur"
+//     ]
+// ];
 
 
-for (let i = 0; i < fruits.length; i++) {
-    for (let j = 0; j < fruits[i].length; j++) {
-        console.log(`Nama buah: ${fruits[i][j]}`);
-        console.log(`Jumlah huruf: ${fruits[i][j].length}`);
-    }
-}
+// for (let i = 0; i < fruits.length; i++) {
+//     for (let j = 0; j < fruits[i].length; j++) {
+//         console.log(`Nama buah: ${fruits[i][j]}`);
+//         console.log(`Jumlah huruf: ${fruits[i][j].length}`);
+//     }
+// }
+
