@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List dengan DOM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      #taskList {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        padding: 5px;
+        border: 1px solid #ccc;
+      }
+      .completed {
+        text-decoration: line-through;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Tambahkan tugas..." />
+    <button id = "addButton">Tambah</button>
+    <ul id="taskList"></ul>
+  </body>
+
+
+  <script>
+    const inputTask = document.getElementById('taskInput');
+    const taskList = document.getElementById('taskList');
+    const addButton = document.getElementById('addButton');
+
+    addButton.addEventListener('click', function() {
+        //mendapat nilai dari inputan
+        const taskText = inputTask.value;
+        //tampilkan hasilnya
+        console.log(taskText);
+        //membuat elemen li baru
+        const li = document.createElement('li');
+        //membuat elemen span baru
+        const span = document.createElement('span');
+        //buat delete button disebelah kanan
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Hapus';
+        deleteButton.addEventListener('click', function() {
+            li.remove();
+        });
+        //buat event listener untuk menandai tugas sebagai selesai ubah warna merah
+        span.addEventListener('click', function() {
+            li.classList.toggle('completed');
+        });
+        
+
+        span.textContent = taskText;
+        li.appendChild(span);
+        li.appendChild(deleteButton);
+        taskList.appendChild(li);
+
+
+    }
+
+      
+    )
+
+  </script>
+</html>
