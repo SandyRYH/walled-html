@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Walled</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo-container">
+                <img src="./vector.png">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard" class="active">Dashboard</a></li>
+                <li><a href="#transfer">Transfer</a></li>
+                <li><a href="#topup">Topup</a></li>
+                <li><a href="#signout">Sign Out</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="welcome-section">
+        <div class="welcome-text">
+            <h1>Good Morning, Chelsea</h1>
+            <p>Check all your incoming and outgoing transactions here</p>
+        </div>
+        <div class="profile-section">
+            <div class="profile-info">
+                <strong>Chelsea Immanuela</strong>
+                <span>Personal Account</span>
+            </div>
+            <img src="./chelsea.png" alt="Chelsea Immanuela">
+        </div>
+    </section>
+    
+
+    <div class="account-container">
+        <div class="account-info">
+            <p class="account-label">Account No.</p>
+            <p class="account-number">100899</p>
+        </div>
+        <div class="balance-info">
+            <div class="balance-text">
+                <p class="balance-label">Balance</p>
+                <div class="balance-amount-container">
+                    <p class="balance-amount">Rp 10.000.000,00</p>
+                    <img src="./view.png" class="icon eye-icon">
+                </div>
+            </div>
+            <div class="balance-actions">
+                <button class="action-btn">
+                    <img src="./plus.png" class="icon">
+                </button>
+                <button class="action-btn">
+                    <img src="./plane.png" class="icon">
+                </button>
+            </div>
+        </div>
+            
+    </div>
+
+    <div class="filter-container">
+        <div class="search-box">
+            <img src="./search-icon.png" alt="Search Icon" class="search-icon">
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="filter-options">
+            <div class="filter-group">
+                <label>Show</label>
+                <select>
+                    <option>Last 10 transactions</option>
+                    <option>Last 20 transactions</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Sort by</label>
+                <select>
+                    <option>Date</option>
+                    <option>Amount</option>
+                </select>
+                <select>
+                    <option>Descending</option>
+                    <option>Ascending</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <table class="transaction-table">
+        <thead>
+            <tr>
+                <th>Date & Time</th>
+                <th>Type</th>
+                <th>From / To</th>
+                <th>Description</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Transfer</td>
+                <td>Sendy</td>
+                <td>Fore Coffee</td>
+                <td class="amount negative">- 75.000,00</td>
+            </tr>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Topup</td>
+                <td></td>
+                <td>Topup from Bank Transfer</td>
+                <td class="amount positive">+ 1.000.000,00</td>
+            </tr>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Transfer</td>
+                <td>Spongebob</td>
+                <td>Fore Coffee</td>
+                <td class="amount negative">- 75.000,00</td>
+            </tr>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Topup</td>
+                <td></td>
+                <td>Topup from Bank Transfer</td>
+                <td class="amount positive">+ 1.000.000,00</td>
+            </tr>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Transfer</td>
+                <td>Anwar</td>
+                <td>Beli barang</td>
+                <td class="amount negative">- 75.000,00</td>
+            </tr>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Transfer</td>
+                <td>Joko</td>
+                <td>Transfer</td>
+                <td class="amount positive">+ 1.000.000,00</td>
+            </tr>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Transfer</td>
+                <td>Joko</td>
+                <td>Fore Coffee</td>
+                <td class="amount negative">- 75.000,00</td>
+            </tr>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Topup</td>
+                <td></td>
+                <td>Topup from Bank Transfer</td>
+                <td class="amount positive">+ 1.000.000,00</td>
+            </tr>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Transfer</td>
+                <td>Joko</td>
+                <td>Fore Coffee</td>
+                <td class="amount negative">- 75.000,00</td>
+            </tr>
+            <tr>
+                <td>20:10 - 30 June 2022</td>
+                <td>Topup</td>
+                <td></td>
+                <td>Topup from Bank Transfer</td>
+                <td class="amount positive">+ 1.000.000,00</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="pagination-container">
+        <button class="page-btn first" disabled>First</button>
+        <button class="page-btn">1</button>
+        <button class="page-btn active">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn next">Next</button>
+    </div>
+    
+    <!-- Ruangan kosong di bawah pagination -->
+    <div class="bottom-space"></div>
+    
+    
+    
+    
+
+</body>
+</html>
